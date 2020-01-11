@@ -13,8 +13,11 @@ var initState = {
     ]
 }
 function reducer(state=initState, action){
-    if(action.type === 'CHANGE_MODE'){
+    if(action.type === 'WELCOME'){
         return {...state, mode:action.mode};
+    }
+    if(action.type === 'READ'){
+        return {...state, mode:'READ', selected_content_id:action.id}
     }
     return state;
 }

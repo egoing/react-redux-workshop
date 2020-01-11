@@ -19,7 +19,7 @@ export default connect(
     function(dispatch){
         return {
             onClick:function(){
-                dispatch({type:'CHANGE_MODE', mode:'WELCOME'})
+                dispatch({type:'WELCOME'})
             }
         }
     }
