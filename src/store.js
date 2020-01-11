@@ -6,6 +6,7 @@ var initState = {
         desc:'Hello, WEB'
     },
     selected_content_id:1,
+    max_content_id:3,
     contents:[
         {id:1, title:'HTML', desc:'HTML is ...'},
         {id:2, title:'CSS', desc:'CSS is ...'},
@@ -21,6 +22,24 @@ function reducer(state=initState, action){
     }
     if(action.type === 'CREATE'){
         return {...state, mode:'CREATE'}
+    }
+    if(action.type === 'CREATE_PROCESS'){
+        var newId = state.max_content_id+1;
+        var newContents = [
+            ...state.contents
+            ,{
+                id:newId, 
+                title:action.title,
+                desc:action.desc
+            }
+        ];
+        return {
+            ...state,
+            contents:newContents,
+            max_content_id:newId,
+            mode:'READ',
+            selected_content_id:newId
+        };
     }
     return state;
 }
