@@ -61,6 +61,19 @@ function reducer(state=initState, action){
             selected_content_id:action.id
         };
     }
+    if(action.type === 'DELETE_PROCESS'){
+        var newContents = state.contents.filter(function(e){
+            if(e.id === state.selected_content_id){
+                return false;
+            }
+            return true;
+        })
+        return {
+            ...state,
+            contents:newContents,
+            mode:'WELCOME'
+        }
+    }
     return state;
 }
 export default createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
