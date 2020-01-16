@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-redux-workshop/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/react-redux-workshop/static/js/main.8714c552.chunk.js",
+    "main.js.map": "/react-redux-workshop/static/js/main.8714c552.chunk.js.map",
+    "runtime-main.js": "/react-redux-workshop/static/js/runtime-main.c92e8fee.js",
+    "runtime-main.js.map": "/react-redux-workshop/static/js/runtime-main.c92e8fee.js.map",
+    "static/js/2.8c72f890.chunk.js": "/react-redux-workshop/static/js/2.8c72f890.chunk.js",
+    "static/js/2.8c72f890.chunk.js.map": "/react-redux-workshop/static/js/2.8c72f890.chunk.js.map",
+    "index.html": "/react-redux-workshop/index.html",
+    "precache-manifest.36ab4e0771f11bfdd8d5580def30749f.js": "/react-redux-workshop/precache-manifest.36ab4e0771f11bfdd8d5580def30749f.js",
+    "service-worker.js": "/react-redux-workshop/service-worker.js",
+    "static/css/main.27fd15f6.chunk.css.map": "/react-redux-workshop/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.8c72f890.chunk.js.LICENSE": "/react-redux-workshop/static/js/2.8c72f890.chunk.js.LICENSE",
+    "static/media/logo.svg": "/react-redux-workshop/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c92e8fee.js",
+    "static/js/2.8c72f890.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.8714c552.chunk.js"
+  ]
+}
